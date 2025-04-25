@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+h1, h2, h3{
+    font-weight: 600;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+.hero-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+.hero-container p{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: black;
+}
+.hero-container a{
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero-container a:hover{
+    background-color: #ff6b81;
+}
+
+
+.services-section{
+    padding: 20px 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.services-section .service__card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 10px;
+}
+
+.services-section h2{
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+.services-section .service-card{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 32%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+.services-section .service-card:hover{
+    transform: translateY(-10px);
+}
+.services-section .service-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.services-section .service-card p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.services-section .service-card a{
+    background-color: #ff4757;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.services-section .service-card a:hover{
+    background-color: #ff6b81;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+footer a{
+    color: #ff4757;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li{
+    display: inline;
+}
+
+@media screen and (max-width: 900px) {
+    .services-section .service__card-container{ 
+        flex-direction: column;
+    }
+    .services-section .service-card{
+        width: 100%;
+    }
+}
