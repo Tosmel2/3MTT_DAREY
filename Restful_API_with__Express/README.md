@@ -61,7 +61,7 @@ Restful_API_with_Express/
 1. Clone or download the repo:
 
    ```bash
-   git clone https://github.com/tosmel2/3MTT_DAREY/express-rest-api.git
+   git clone https://github.com/Tosmel2/3MTT_DAREY/tree/main/Restful_API_with__Express
    cd Restful_API_with_Express
    ```
 2. Install dependencies:
